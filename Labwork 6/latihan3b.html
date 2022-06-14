@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasi Transisi CSS3</title>
+
+    <style type="text/css">
+        .oval{
+            width: 40%;
+            height: 100px;
+            background: blue;
+            border: 2px solid #212121;
+            border-radius: 50%;
+
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+        @-webkit-keyframes spin{
+                0% {-webkit-transform: rotate(0deg);}
+                100% {-webkit-transform: rotate(360deg);}
+        }
+        @keyframes spin{
+            0% {-webkit-transform: rotate(0deg);}
+            100% {-webkit-transform: rotate(360deg);}
+        }
+
+        /*landscape*/
+        @media(orientation:landscape){
+            .oval{
+                width: 100%;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+    <h3>Transisi CSS3</h3>
+
+    <div class="oval"></div>
+    <p>
+        ubah orientasi ini ke landscape/potrait dan sebaliknya untuk melihat transisi
+    </p>   
+</body>
+</html>

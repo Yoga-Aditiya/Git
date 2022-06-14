@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>REGISTRASI</title>
+<style>
+    body{
+        background-image: url('gradient.jpg');
+        background-size: cover;
+    }
+</style>
+</head>
+<body>
+  <center>
+    <hr color="black" size="20">
+  <h1>REGISTRASI PERPUSTAKAAN UNS</h1>
+  <br>
+
+  <form action="" method="post">
+      <table>
+        <tr >
+          <td>Username :</td>
+          <td><input type="text" name="user" placeholder="Masukkan username" required></td>
+        </tr>
+        <tr>
+          <td>Password :</td>
+          <td><input type="password" name="user_pass" placeholder="Masukkan Password" required></td>
+        </tr>
+        <tr>
+          <td>Email :</td>
+          <td><input type="email" name="mail" placeholder="Masukkan E-mail" required></td>
+        </tr>
+
+        <tr>
+          <td>Jenis Kelamin :</td>
+          <td>
+          <input type="radio" name="gender"> Laki-laki
+          <input type="radio" name="gender"> Perempuan
+          <input type="radio" name="gender"> Tidak ingin disebutkan
+          </td>
+        </tr>
+
+        <tr>
+          <td>No.HP :</td>
+          <td>
+            <select name="kode_negara">
+              <option value="+62">+62</option>
+            </select>
+            <input type="phone" name="no.hp" placeholder="8**********" required>
+          </td>
+        </tr>
+
+        <tr>
+           <td><input type="submit" name="submit" value="Selesai"></td>
+        </tr>
+
+      </table>
+  </form>
+  
+  </center>
+</body>
+</html>
